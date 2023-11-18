@@ -1,8 +1,0 @@
-- name: variable practice
-  hosts: localhost
-  vars:
-    NAME: Ganesh
-    NUMBER: 4
-  task:
-    ansible.builtin.debug:
-      msg: "Name is {{NAME}} and the number is {{NUMBER}}"
