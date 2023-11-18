@@ -1,0 +1,6 @@
+- name: remote ping test
+  hosts: 172.31.44.142
+  tasks:
+  - name: ping test through ansible
+    ansible.builtin.ping:
+    
