@@ -1,4 +1,4 @@
-- name: variable practice
+- name: variables in ansible
   hosts: localhost
   vars:
     NAME: Ganesh
