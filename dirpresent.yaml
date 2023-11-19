@@ -1,5 +1,6 @@
 - name: directory present check
   hosts: web
+  become: yes
   tasks:
   - name: directory check
     ansible.builtin.stat:
