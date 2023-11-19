@@ -1,0 +1,16 @@
+- name: directory present check
+  hosts: web
+  tasks:
+  - name: directory check
+    ansible.builtin.stat:
+      path: /root/app
+    register: file_data
+  - name: if dir exists
+    ansible.builtin.debug:
+      msg: "The file or directory exists"
+    when: file_data.stat.exists
+
+  - name: if dir no exists
+    ansible.builtin.debug:
+      msg: "The directory doesn't exists"
+    when: not file_data.stat.exists
