@@ -2,6 +2,8 @@ git status
 git log
 git log --patch -1
 git log -p -1
+git annotate filename # will help to understand who modified with the date and time
+git diff commidid commit id # will help to understand the diff between two commits
 
 modify file
 git staus -> modified
