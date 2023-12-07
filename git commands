@@ -1,0 +1,12 @@
+git status
+git log
+git log --patch -1
+git log -p -1
+
+modify file
+git staus -> modified
+git add file name -> staged
+git restore --staged -> move back to modified
+git restore filename => remove all changes.
+git remove -v
+git push origin master

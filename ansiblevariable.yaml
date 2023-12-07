@@ -3,6 +3,6 @@
   vars:
     NAME: Ganesh
     NUMBER: 4
-  task:
+  tasks:
     ansible.builtin.debug:
       msg: "Name is {{NAME}} and the number is {{NUMBER}}"
